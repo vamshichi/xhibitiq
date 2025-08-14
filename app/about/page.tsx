@@ -48,7 +48,7 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/images/events-1.png')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-20 lg:py-28">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-purple-600/20 text-purple-200 border-purple-500/30">About XhibitIQ</Badge>
