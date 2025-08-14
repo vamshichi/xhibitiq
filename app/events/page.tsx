@@ -16,7 +16,7 @@ export default function EventsPage() {
         "The premier blockchain and Web3 conference in the Middle East, bringing together industry leaders, investors, and innovators.",
       attendees: "500+",
       type: "Flagship Conference",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/bc4.jpg",
     },
     {
       name: "Digital Health Summit 2026",
@@ -26,7 +26,7 @@ export default function EventsPage() {
         "Exploring the future of healthcare technology, telemedicine, and digital health innovations across Asia-Pacific.",
       attendees: "300+",
       type: "Industry Summit",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/health.jpg",
     },
     {
       name: "Blocksphere Saudi Arabia 2025",
@@ -36,7 +36,7 @@ export default function EventsPage() {
         "Showcasing blockchain adoption and cryptocurrency regulations in the Kingdom's Vision 2030 transformation.",
       attendees: "400+",
       type: "Regional Conference",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/blockchane.jpg",
     },
     {
       name: "Cyber Security Summit 2026",
@@ -46,7 +46,7 @@ export default function EventsPage() {
         "India's largest cybersecurity conference addressing emerging threats, AI security, and enterprise protection strategies.",
       attendees: "600+",
       type: "Security Summit",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/cybersecurity.png",
     },
     {
       name: "Agentic AI & Customer Experience Summit",
@@ -55,7 +55,7 @@ export default function EventsPage() {
       description: "Exploring autonomous AI agents and their impact on customer experience and business automation.",
       attendees: "350+",
       type: "AI Summit",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/ai2.jpg",
     },
     {
       name: "Blocksphere SEA 2026",
@@ -65,7 +65,7 @@ export default function EventsPage() {
         "Southeast Asia's premier blockchain conference focusing on DeFi, NFTs, and regional crypto adoption.",
       attendees: "450+",
       type: "Regional Summit",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/bc2.jpg",
     },
     {
       name: "Cyber Security Summit Malaysia 2026",
@@ -75,7 +75,7 @@ export default function EventsPage() {
         "Malaysia's leading cybersecurity event covering threat intelligence, incident response, and regulatory compliance.",
       attendees: "400+",
       type: "Security Conference",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/cs2.jpg",
     },
     {
       name: "Blocksphere Dubai 2026",
@@ -84,7 +84,7 @@ export default function EventsPage() {
       description: "The second edition of our flagship Dubai blockchain conference, expanding on the success of 2025.",
       attendees: "700+",
       type: "Flagship Conference",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/bc3.jpg",
     },
   ]
 
@@ -132,7 +132,7 @@ export default function EventsPage() {
       {/* Events Grid */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {upcomingEvents.map((event, index) => (
               <Card
                 key={index}
@@ -142,7 +142,7 @@ export default function EventsPage() {
                   <img
                     src={event.image || "/placeholder.svg"}
                     alt={event.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-white/90 text-slate-800 backdrop-blur-sm">{event.type}</Badge>
