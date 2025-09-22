@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"   // ✅ correct import for images
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -22,10 +23,18 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">X</span>
+            {/* Logo Image */}
+            <div className="w-20 h-40 py-2 relative">
+              <Image
+                src="/Xhibitiq Logo.png" // put this image in public/
+                alt="XhibitIQ Logo"
+                fill
+                className="object-contain rounded-lg"
+              />
             </div>
-            <span className="text-2xl font-bold text-slate-900">XhibitIQ</span>
+
+            {/* Brand Name */}
+            {/* <span className="text-2xl font-bold text-slate-900">XhibitIQ</span> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -42,14 +51,22 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent">
+            <Button
+              variant="outline"
+              className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
+            >
               Request Proposal
             </Button>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">Let's Talk</Button>
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+              Let's Talk
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -69,10 +86,15 @@ export default function Header() {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent">
+                <Button
+                  variant="outline"
+                  className="border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
+                >
                   Request Proposal
                 </Button>
-                <Button className="bg-purple-600 hover:bg-purple-700 text-white">Let's Talk</Button>
+                <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+                  Let's Talk
+                </Button>
               </div>
             </nav>
           </div>
