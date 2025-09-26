@@ -9,8 +9,8 @@ import Footer from "@/components/footer"
 export default function EventsPage() {
   const upcomingEvents = [
     {
-      name: "Blocksphere Dubai 2025",
-      date: "12th & 13th November 2025",
+      name: "Blocksphere summit Dubai 2026",
+      date: "4th & 5th feb 2026",
       location: "Dubai",
       description:
         "The premier blockchain and Web3 conference in the Middle East, bringing together industry leaders, investors, and innovators.",
