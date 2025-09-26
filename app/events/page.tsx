@@ -11,7 +11,7 @@ export default function EventsPage() {
     {
       name: "Blocksphere Dubai 2025",
       date: "12th & 13th November 2025",
-      location: "Dubai, UAE",
+      location: "Dubai",
       description:
         "The premier blockchain and Web3 conference in the Middle East, bringing together industry leaders, investors, and innovators.",
       attendees: "500+",
