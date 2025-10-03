@@ -139,7 +139,7 @@ export default function HomePage() {
   ]
 
   const upcomingEvents = [
-    { name: "Blocksphere Dubai 2025", date: "12th & 13th November 2025", location: "Dubai" },
+    { name: "Blocksphere Dubai 2026", date: "4th & 5th February 2026", location: "Dubai" },
     { name: "Digital Health Summit 2026", date: "April 2026", location: "Singapore" },
     { name: "Blocksphere Saudi Arabia 2025", date: "April 2026", location: "Riyadh, Saudi Arabia" },
     { name: "Cyber Security Summit 2026", date: "May 2026", location: "Mumbai, India" },
