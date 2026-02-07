@@ -150,11 +150,11 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-800 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-slate-950 to-black text-white">
         <div className="absolute inset-0 bg-[url('/images/events-1.png')] opacity-25"></div>
         <div className="relative container mx-auto px-4 py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-purple-600/20 text-purple-200 border-purple-500/30 animate-in fade-in-0 slide-in-from-top-4 duration-1000">
+            <Badge className="mb-6 bg-orange-800 text-orange-200 border-orange-500/30 animate-in fade-in-0 slide-in-from-top-4 duration-1000">
               Next-Gen Business Events
             </Badge>
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-200">
@@ -168,7 +168,7 @@ export default function HomePage() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+                  className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25"
                 >
                   Let's Talk <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -283,11 +283,11 @@ export default function HomePage() {
               >
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/25">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-orange-500/25">
                       {service.icon}
                     </div>
                     <div>
-                      <h3 className="text-2xl font-semibold mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
+                      <h3 className="text-2xl font-semibold mb-3 text-slate-900 group-hover:text-orange-600 transition-colors duration-300">
                         {service.title}
                       </h3>
                       <p className="text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors duration-300">
@@ -303,7 +303,7 @@ export default function HomePage() {
       </section>
 
       {/* Enhanced Industries Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-purple-900 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
         {/* Advanced Background Effects */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -446,8 +446,8 @@ export default function HomePage() {
             <Link href="/industries">
               <button className="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-semibold text-white transition-all   hover:scale-105">
                 {/* Multi-layer Button Background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-2xl"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity  "></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-yellow-600 to-blue-600 rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-yellow-600 to-blue-600 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity  "></div>
                 <div className="absolute inset-[2px] bg-slate-900 rounded-2xl"></div>
 
                 {/* Animated Border Sweep */}
@@ -467,7 +467,7 @@ export default function HomePage() {
       </section>
 
       {/* Upcoming Events Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 animate-in fade-in-0 slide-in-from-bottom-4 duration-700">
@@ -528,7 +528,7 @@ export default function HomePage() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+                  className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25"
                 >
                   Let's Talk <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>

@@ -9,6 +9,16 @@ import Footer from "@/components/footer"
 export default function EventsPage() {
   const upcomingEvents = [
     {
+      name:"2nd BFSI Tech Innovation Summit & Awards 2026",
+      date: "18th June 2026",
+      location: "Mumbai, India",
+      description:
+        "India's premier banking and financial services technology event, showcasing the latest innovations in fintech, digital banking, and financial inclusion.",
+      attendees: "400+",
+      type: "Industry Summit",
+      image: "/images/BFSI_LOGO_ OPTIONS-01.png",
+    },
+    {
       name: "Blocksphere summit Dubai 2026",
       date: "4th & 5th feb 2026",
       location: "Dubai",
@@ -142,7 +152,7 @@ export default function EventsPage() {
                   <img
                     src={event.image || "/placeholder.svg"}
                     alt={event.name}
-                    className="w-full h-full group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full group-hover:scale-105 transition-transform duration-300 bg-black"
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-white/90 text-slate-800 backdrop-blur-sm">{event.type}</Badge>

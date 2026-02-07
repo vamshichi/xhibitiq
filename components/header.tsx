@@ -19,17 +19,17 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+    <header className="bg-black top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
             {/* Logo Image */}
-            <div className="w-20 h-40 py-2 relative">
+            <div className="w-20 h-40 py-8 relative">
               <Image
-                src="/Xhibitiq Logo.png" // put this image in public/
+                src="/Xlogo1.png" // put this image in public/
                 alt="XhibitIQ Logo"
                 fill
-                className="object-contain rounded-lg"
+                className="object-contain rounded-lg py-4"
               />
             </div>
 
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-slate-700 hover:text-purple-600 font-medium transition-colors"
+                className="text-white hover:text-slate-200 font-medium transition-colors"
               >
                 {item.name}
               </Link>
@@ -57,7 +57,7 @@ export default function Header() {
             >
               Request Proposal
             </Button>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+            <Button className="bg-orange-600 hover:bg-purple-700 text-white">
               Let's Talk
             </Button>
           </div>
