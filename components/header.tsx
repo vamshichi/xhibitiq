@@ -26,7 +26,7 @@ export default function Header() {
             {/* Logo Image */}
             <div className="w-20 h-40 py-8 relative">
               <Image
-                src="/Xlogoone.png" // put this image in public/
+                src="/X-logo.png" // put this image in public/
                 alt="XhibitIQ Logo"
                 fill
                 className="object-contain rounded-lg py-4"
