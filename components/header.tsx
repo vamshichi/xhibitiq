@@ -26,7 +26,7 @@ export default function Header() {
             {/* Logo Image */}
             <div className="w-20 h-40 py-8 relative">
               <Image
-                src="/Xlogo1.png" // put this image in public/
+                src="/Xlogoone.png" // put this image in public/
                 alt="XhibitIQ Logo"
                 fill
                 className="object-contain rounded-lg py-4"
@@ -64,7 +64,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
