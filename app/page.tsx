@@ -467,13 +467,13 @@ export default function HomePage() {
       </section>
 
       {/* Upcoming Events Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
+      <section className="py-20  text-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 animate-in fade-in-0 slide-in-from-bottom-4 duration-700">
               Our Upcoming Events
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-in fade-in-0 slide-in-from-bottom-4 duration-700 delay-200">
+            <p className="text-xl text-slate-900 max-w-3xl mx-auto animate-in fade-in-0 slide-in-from-bottom-4 duration-700 delay-200">
               Join industry leaders and visionaries at our upcoming flagship events across the globe.
             </p>
           </div>
@@ -482,17 +482,17 @@ export default function HomePage() {
             {upcomingEvents.map((event, index) => (
               <Card
                 key={index}
-                className={`bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all   hover:-translate-y-3 hover:scale-105 animate-in fade-in-0 slide-in-from-bottom-4 duration-700 group hover:shadow-2xl hover:shadow-purple-500/25`}
+                className={`bg-white/10 border-orange-100 backdrop-blur-sm hover:bg-orange-600 transition-all   hover:-translate-y-3 hover:scale-105 animate-in fade-in-0 slide-in-from-bottom-4 duration-700 group hover:shadow-2xl hover:shadow-purple-500/25`}
                 style={{ animationDelay: `${300 + index * 100}ms` }}
               >
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-purple-200 transition-colors duration-300">
+                  <h3 className="text-xl font-semibold mb-3 text-black group-hover:text-purple-200 transition-colors duration-300">
                     {event.name}
                   </h3>
-                  <p className="text-purple-200 mb-2 group-hover:text-purple-100 transition-colors duration-300">
+                  <p className="text-black mb-2 group-hover:text-purple-100 transition-colors duration-300">
                     {event.date}
                   </p>
-                  <p className="text-slate-300 group-hover:text-slate-200 transition-colors duration-300">
+                  <p className="text-black group-hover:text-slate-200 transition-colors duration-300">
                     {event.location}
                   </p>
                 </CardContent>
@@ -504,7 +504,7 @@ export default function HomePage() {
             <Link href="/events">
               <Button
                 size="lg"
-                className="bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg"
+                className="bg-black text-slate-100 hover:bg-orange-600 px-8 py-4 text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg"
               >
                 View All Events <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -514,13 +514,13 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 animate-in fade-in-0 slide-in-from-bottom-4 duration-700">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-100 animate-in fade-in-0 slide-in-from-bottom-4 duration-700">
               Join the Future with XhibitIQ
             </h2>
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-700 delay-200">
+            <p className="text-xl text-slate-300 mb-8 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-700 delay-200">
               Whether you're a brand ready to lead the narrative, a visionary looking to share the stage, or a company
               hungry for demand and growth — XhibitIQ is your gateway to tomorrow.
             </p>

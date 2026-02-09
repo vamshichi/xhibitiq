@@ -19,9 +19,9 @@ export default function EventsPage() {
       image: "/images/BFSI_LOGO_ OPTIONS-01.png",
     },
     {
-      name: "Blocksphere summit Dubai 2026",
-      date: "4th & 5th feb 2026",
-      location: "Dubai",
+      name: "Blocksphere India Summit & Awards 2026",
+      date: "December 2026",
+      location: "Mumbai, India",
       description:
         "The premier blockchain and Web3 conference in the Middle East, bringing together industry leaders, investors, and innovators.",
       attendees: "500+",
@@ -29,29 +29,9 @@ export default function EventsPage() {
       image: "/images/bc4.jpg",
     },
     {
-      name: "Digital Health Summit 2026",
-      date: "April 2026",
-      location: "Singapore",
-      description:
-        "Exploring the future of healthcare technology, telemedicine, and digital health innovations across Asia-Pacific.",
-      attendees: "300+",
-      type: "Industry Summit",
-      image: "/images/health.jpg",
-    },
-    {
-      name: "Blocksphere Saudi Arabia 2025",
-      date: "April 2026",
-      location: "Riyadh, Saudi Arabia",
-      description:
-        "Showcasing blockchain adoption and cryptocurrency regulations in the Kingdom's Vision 2030 transformation.",
-      attendees: "400+",
-      type: "Regional Conference",
-      image: "/images/blockchane.jpg",
-    },
-    {
-      name: "Cyber Security Summit 2026",
-      date: "May 2026",
-      location: "Mumbai, India",
+      name: "Cyber Security Summit & Awards 2026",
+      date: "August 2026",
+      location: "New Delhi, India",
       description:
         "India's largest cybersecurity conference addressing emerging threats, AI security, and enterprise protection strategies.",
       attendees: "600+",
@@ -59,8 +39,8 @@ export default function EventsPage() {
       image: "/images/cybersecurity.png",
     },
     {
-      name: "Agentic AI & Customer Experience Summit",
-      date: "June 2026",
+      name: "Agentic AI & Customer Experience Summit 2026",
+      date: "October 2026",
       location: "Bangalore, India",
       description: "Exploring autonomous AI agents and their impact on customer experience and business automation.",
       attendees: "350+",
@@ -68,34 +48,15 @@ export default function EventsPage() {
       image: "/images/ai2.jpg",
     },
     {
-      name: "Blocksphere SEA 2026",
-      date: "July 2026",
-      location: "Bali, Indonesia",
+      name:"3nd BFSI Tech Innovation Summit & Awards 2026",
+      date: "April 2027",
+      location: "Mumbai, India",
       description:
-        "Southeast Asia's premier blockchain conference focusing on DeFi, NFTs, and regional crypto adoption.",
-      attendees: "450+",
-      type: "Regional Summit",
-      image: "/images/bc2.jpg",
-    },
-    {
-      name: "Cyber Security Summit Malaysia 2026",
-      date: "August 2026",
-      location: "Kuala Lumpur, Malaysia",
-      description:
-        "Malaysia's leading cybersecurity event covering threat intelligence, incident response, and regulatory compliance.",
+        "India's premier banking and financial services technology event, showcasing the latest innovations in fintech, digital banking, and financial inclusion.",
       attendees: "400+",
-      type: "Security Conference",
-      image: "/images/cs2.jpg",
-    },
-    {
-      name: "Blocksphere Dubai 2026",
-      date: "November 2026",
-      location: "Dubai, UAE",
-      description: "The second edition of our flagship Dubai blockchain conference, expanding on the success of 2025.",
-      attendees: "700+",
-      type: "Flagship Conference",
-      image: "/images/bc3.jpg",
-    },
+      type: "Industry Summit",
+      image: "/images/BFSI_LOGO_ OPTIONS-01.png", 
+    }
   ]
 
   const eventTypes = [
@@ -110,7 +71,7 @@ export default function EventsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-yellow-600 via-orange-600 to-orange-900 text-white">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-20 lg:py-28">
           <div className="max-w-4xl mx-auto text-center">
@@ -127,7 +88,7 @@ export default function EventsPage() {
       </section>
 
       {/* Event Types Filter */}
-      <section className="py-12 bg-white border-b border-slate-200">
+      {/* <section className="py-12 bg-white border-b border-slate-200">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4">
             {eventTypes.map((type, index) => (
@@ -137,7 +98,7 @@ export default function EventsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Events Grid */}
       <section className="py-20 bg-white">
@@ -159,28 +120,28 @@ export default function EventsPage() {
                   </div>
                 </div>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-slate-900 group-hover:text-purple-600 transition-colors">
+                  <h3 className="text-2xl font-semibold mb-4 text-slate-900 group-hover:text-orange-600 transition-colors">
                     {event.name}
                   </h3>
                   <p className="text-slate-600 leading-relaxed mb-6">{event.description}</p>
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-3 text-slate-700">
-                      <Calendar className="h-5 w-5 text-purple-500" />
+                      <Calendar className="h-5 w-5 text-orange-500" />
                       <span>{event.date}</span>
                     </div>
                     <div className="flex items-center space-x-3 text-slate-700">
-                      <MapPin className="h-5 w-5 text-purple-500" />
+                      <MapPin className="h-5 w-5 text-orange-500" />
                       <span>{event.location}</span>
                     </div>
                     <div className="flex items-center space-x-3 text-slate-700">
-                      <Users className="h-5 w-5 text-purple-500" />
+                      <Users className="h-5 w-5 text-orange-500" />
                       <span>{event.attendees} Expected Attendees</span>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Button className="bg-purple-600 hover:bg-purple-700 text-white flex-1">
+                    <Button className="bg-orange-600 hover:bg-orange-700 text-white flex-1">
                       Register Interest <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                     <Button
@@ -216,7 +177,7 @@ export default function EventsPage() {
             ].map((stat, index) => (
               <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow text-center">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
                     {stat.icon}
                   </div>
                   <div className="text-3xl font-bold text-slate-900 mb-2">{stat.number}</div>
@@ -229,7 +190,7 @@ export default function EventsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-orange-900 to-orange-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-8">Ready to Join the Future?</h2>

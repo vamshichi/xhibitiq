@@ -15,12 +15,12 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-yellow-900 via-orange-900 to-orange-900 text-white">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-20 lg:py-28">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-purple-600/20 text-purple-200 border-purple-500/30">Get In Touch</Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
+            <Badge className="mb-6 bg-orange-600/20 text-orange-200 border-orange-500/30">Get In Touch</Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent">
               Let's Build the Future Together
             </h1>
             <p className="text-xl lg:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
@@ -118,7 +118,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-xl font-semibold mb-2 text-slate-900">Phone</h3>
                         <p className="text-slate-600 mb-2">Ready to discuss your event needs?</p>
-                        <p className="text-lg font-medium text-purple-600">+91-99716 45739</p>
+                        <p className="text-lg font-medium text-purple-600">+91-99716 457 39</p>
                       </div>
                     </div>
                   </CardContent>
@@ -193,7 +193,7 @@ export default function ContactPage() {
               },
               {
                 title: "Speaking Opportunities",
-                description: "Share your expertise with industry leaders and innovators",
+                description: "Nishanth Kutty at +91-99716 457 39 or nishanth@xhibitiq.com",
                 benefits: ["Industry recognition", "Network expansion", "Content amplification"],
               },
               {
@@ -224,7 +224,7 @@ export default function ContactPage() {
                   <ul className="space-y-2">
                     {option.benefits.map((benefit, benefitIndex) => (
                       <li key={benefitIndex} className="flex items-center space-x-2 text-slate-700">
-                        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                         <span>{benefit}</span>
                       </li>
                     ))}
@@ -237,7 +237,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-900 to-orange-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-8">Ready to Get Started?</h2>

@@ -20,7 +20,7 @@ export default function ServicesPage() {
         "Exhibition spaces",
         "Live streaming capabilities",
       ],
-      color: "from-purple-500 to-purple-600",
+      color: "from-yellow-500 to-orange-600",
     },
     {
       icon: <Users className="h-10 w-10" />,
@@ -35,7 +35,7 @@ export default function ServicesPage() {
         "Strategic partnership forums",
         "Exclusive networking dinners",
       ],
-      color: "from-emerald-500 to-emerald-600",
+      color: "from-orange-500 to-orange-600",
     },
     {
       icon: <Lightbulb className="h-10 w-10" />,
@@ -64,7 +64,7 @@ export default function ServicesPage() {
         "Brand positioning campaigns",
         "ROI-focused metrics",
       ],
-      color: "from-rose-500 to-rose-600",
+      color: "from-yellow-500 to-orange-600",
     },
     {
       icon: <Presentation className="h-10 w-10" />,
@@ -78,7 +78,7 @@ export default function ServicesPage() {
         "Interactive exhibitions",
         "Media coverage coordination",
       ],
-      color: "from-blue-500 to-blue-600",
+      color: "from-orange-500 to-orange-600",
     },
     {
       icon: <Network className="h-10 w-10" />,
@@ -92,7 +92,7 @@ export default function ServicesPage() {
         "Mentor-mentee programs",
         "Alumni networks",
       ],
-      color: "from-teal-500 to-teal-600",
+      color: "from-yellow-500 to-orange-600",
     },
   ]
 
@@ -101,7 +101,7 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-yellow-500 via-orange-600 to-orange-900 text-white">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-20 lg:py-28">
           <div className="max-w-4xl mx-auto text-center">
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                       <div className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center space-x-3">
-                            <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-orange-500 flex-shrink-0" />
                             <span className="text-slate-700">{feature}</span>
                           </div>
                         ))}
@@ -199,7 +199,7 @@ export default function ServicesPage() {
             ].map((process, index) => (
               <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow text-center">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-xl font-bold">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-xl font-bold">
                     {process.step}
                   </div>
                   <h3 className="text-xl font-semibold mb-4 text-slate-900">{process.title}</h3>
@@ -212,7 +212,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-900 to-orange-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-8">Ready to Transform Your Business Events?</h2>

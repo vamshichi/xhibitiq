@@ -47,7 +47,7 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-yellow-400 via-orange-600 to-orange-900 text-white">
         <div className="absolute inset-0 bg-[url('/images/events-1.png')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-20 lg:py-28">
           <div className="max-w-4xl mx-auto text-center">
@@ -73,7 +73,7 @@ export default function AboutPage() {
               AI to Quantum Tech, Finance to SpaceTech, Sustainability to Smart Cities, our events are engineered to
               shape the conversations that define tomorrow's world.
             </p>
-            <div className="bg-gradient-to-r from-purple-50 to-slate-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-r from-orange-100 to-slate-100 p-8 rounded-2xl">
               <p className="text-lg text-slate-700 italic">
                 "We don't just host events — we architect the future of business through next-gen conferences, bespoke
                 summits, and breakthrough demand generation platforms."
@@ -98,7 +98,7 @@ export default function AboutPage() {
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
                       {value.icon}
                     </div>
                     <div>
@@ -128,10 +128,10 @@ export default function AboutPage() {
               {whyChooseUs.map((reason, index) => (
                 <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow group">
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Award className="h-6 w-6 text-white" />
                     </div>
-                    <p className="font-semibold text-slate-800 group-hover:text-purple-600 transition-colors">
+                    <p className="font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">
                       {reason}
                     </p>
                   </CardContent>
@@ -143,7 +143,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-600 to-orange-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-8">

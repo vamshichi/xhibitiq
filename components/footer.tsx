@@ -1,19 +1,22 @@
 import Link from "next/link"
 import { Mail, Phone } from "lucide-react"
+import Image from "next/image"   // ✅ correct import for images
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className=" ">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">X</span>
-              </div>
-              <span className="text-2xl font-bold">XhibitIQ</span>
-            </div>
-            <p className="text-slate-400 leading-relaxed">
+            <div className="w-20 h-40  relative">
+                          <Image
+                            src="/xiq.png" // put this image in public/
+                            alt="XhibitIQ Logo"
+                            fill
+                            className="object-contain rounded-lg "
+                          />
+                        </div>
+            <p className=" leading-relaxed">
               Architecting the future of business through next-gen conferences, bespoke summits, and breakthrough demand
               generation platforms.
             </p>
@@ -23,22 +26,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="/about" className=" hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="/services" className=" hover:text-white transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/events" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="/events" className=" hover:text-white transition-colors">
                   Events
                 </Link>
               </li>
               <li>
-                <Link href="/industries" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="/industries" className=" hover:text-white transition-colors">
                   Industries
                 </Link>
               </li>
@@ -49,16 +52,16 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <span className="text-slate-400">Conferences & Summits</span>
+                <span className="">Conferences & Summits</span>
               </li>
               <li>
-                <span className="text-slate-400">Bespoke Executive Events</span>
+                <span className="">Bespoke Executive Events</span>
               </li>
               <li>
-                <span className="text-slate-400">Thought Leadership Forums</span>
+                <span className="">Thought Leadership Forums</span>
               </li>
               <li>
-                <span className="text-slate-400">Demand Generation</span>
+                <span className="">Demand Generation</span>
               </li>
             </ul>
           </div>
@@ -67,20 +70,20 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-purple-400" />
-                <span className="text-slate-400">+44-2080892717</span>
+                <Phone className="h-5 w-5 text-orange-400" />
+                <span className="">+91-99716 457 39</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-purple-400" />
-                <span className="text-slate-400">info@xhibitiq.com</span>
+                <Mail className="h-5 w-5 text-orange-400" />
+                <span className=""> nishanth@xhibitiq.com</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 text-center">
-          <p className="text-slate-400">
-            © 2025 XhibitIQ. All rights reserved. Building the future of business events.
+          <p className="">
+            © 2026 XhibitIQ. All rights reserved. Building the future of business events.
           </p>
         </div>
       </div>

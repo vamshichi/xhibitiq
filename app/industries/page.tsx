@@ -99,7 +99,7 @@ export default function IndustriesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-yellow-500 via-orange-600 to-orange-800 text-white">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-20 lg:py-28">
           <div className="max-w-4xl mx-auto text-center">
@@ -122,7 +122,7 @@ export default function IndustriesPage() {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="flex items-center justify-center space-x-2 mb-2">
-                  <div className="text-purple-600">{stat.icon}</div>
+                  <div className="text-orange-600">{stat.icon}</div>
                   <span className="text-3xl font-bold text-slate-900">{stat.number}</span>
                 </div>
                 <p className="text-slate-600">{stat.label}</p>
@@ -234,7 +234,7 @@ export default function IndustriesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 to-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-900 to-orange-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-8">Ready to Lead Your Industry?</h2>
