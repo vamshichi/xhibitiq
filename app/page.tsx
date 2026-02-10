@@ -139,10 +139,10 @@ export default function HomePage() {
   ]
 
   const upcomingEvents = [
-    { name: "Blocksphere Dubai 2026", date: "4th & 5th February 2026", location: "Dubai" },
-    { name: "Digital Health Summit 2026", date: "April 2026", location: "Singapore" },
-    { name: "Blocksphere Saudi Arabia 2025", date: "April 2026", location: "Riyadh, Saudi Arabia" },
-    { name: "Cyber Security Summit 2026", date: "May 2026", location: "Mumbai, India" },
+    { name: "2nd BFSI Tech Innovation Summit & Awards 2026", date: "18th June", location: " Mumbai, India" },
+    { name: "Cyber Security Summit & Awards 2026", date: "August 2026", location: "New Delhi, India" },
+    { name: "Agentic AI & Customer Experience Summit 2026", date: "October 2026", location: " Bangalore, India" },
+    { name: "Blocksphere India Summit & Awards 2026", date: "December 2026", location: "Mumbai, India" },
   ]
 
   return (

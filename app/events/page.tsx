@@ -140,7 +140,7 @@ export default function EventsPage() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-3">
+                  {/* <div className="flex flex-col sm:flex-row gap-3">
                     <Button className="bg-orange-600 hover:bg-orange-700 text-white flex-1">
                       Register Interest <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -150,7 +150,7 @@ export default function EventsPage() {
                     >
                       Learn More
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
